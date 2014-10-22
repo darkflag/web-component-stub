@@ -1,13 +1,23 @@
+var k_prefix = 'k';
 (function () {
     
     // Create your component here
     
-    xtag.register('x-stub', {
+    xtag.register((k_prefix + '-element'), {
+        prototype: Object.create(HTMLElement.prototype),
         lifecycle: {
-            created: function () {},
-            inserted: function () {},
-            removed: function () {},
-            attributeChanged: function () {}
+            created: function () {
+                //
+            },
+            inserted: function () {
+                //
+            },
+            removed: function () {
+                //
+            },
+            attributeChanged: function () {
+                //
+            }
         },
         events: {
             
